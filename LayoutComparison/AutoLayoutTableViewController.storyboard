@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6mf-od-CQX">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9531"/>
+    </dependencies>
+    <scenes>
+        <!--Auto Layout Table View Controller-->
+        <scene sceneID="nJb-6a-4sM">
+            <objects>
+                <tableViewController id="6mf-od-CQX" customClass="AutoLayoutTableViewController" customModule="LayoutComparison" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="B0r-gf-4Pq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Normal" rowHeight="65" id="EdK-em-jw7" customClass="NormalCell" customModule="LayoutComparison" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="320" height="65"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EdK-em-jw7" id="H2R-4B-Bkm">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="64.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0BF-vQ-CaO">
+                                            <rect key="frame" x="8" y="8" width="48" height="48"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="48" id="8Wb-vx-XDV"/>
+                                                <constraint firstAttribute="height" constant="48" id="YVu-yW-jM9"/>
+                                            </constraints>
+                                        </imageView>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZe-gl-Yg6">
+                                            <rect key="frame" x="64" y="8" width="248" height="56.5"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="mZe-gl-Yg6" secondAttribute="bottom" id="6nl-uY-ali"/>
+                                        <constraint firstItem="mZe-gl-Yg6" firstAttribute="top" secondItem="H2R-4B-Bkm" secondAttribute="top" constant="8" id="QXp-0I-LJH"/>
+                                        <constraint firstAttribute="trailing" secondItem="mZe-gl-Yg6" secondAttribute="trailing" constant="8" id="YGI-Lv-fwL"/>
+                                        <constraint firstItem="mZe-gl-Yg6" firstAttribute="leading" secondItem="0BF-vQ-CaO" secondAttribute="trailing" constant="8" id="gKV-gL-vTl"/>
+                                        <constraint firstItem="0BF-vQ-CaO" firstAttribute="leading" secondItem="H2R-4B-Bkm" secondAttribute="leading" constant="8" id="rCd-SV-9D7"/>
+                                        <constraint firstAttribute="bottom" secondItem="0BF-vQ-CaO" secondAttribute="bottom" priority="500" constant="8" id="wxd-XJ-bH7"/>
+                                        <constraint firstItem="0BF-vQ-CaO" firstAttribute="top" secondItem="H2R-4B-Bkm" secondAttribute="top" constant="8" id="xkA-2y-1gT"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="iconImageView" destination="0BF-vQ-CaO" id="9K8-6Q-dmD"/>
+                                    <outlet property="textView" destination="mZe-gl-Yg6" id="kOG-Sv-SAQ"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Big" rowHeight="159" id="nRF-eh-QhN" customClass="BigCell" customModule="LayoutComparison" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="93" width="320" height="159"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nRF-eh-QhN" id="BqB-jr-idD">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="158.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zmi-Ui-bR8">
+                                            <rect key="frame" x="136" y="8" width="48" height="48"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="48" id="LXJ-iJ-R6w"/>
+                                                <constraint firstAttribute="height" constant="48" id="zsL-v6-lks"/>
+                                            </constraints>
+                                        </imageView>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7kt-Gz-lML">
+                                            <rect key="frame" x="8" y="64" width="304" height="86.5"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                            <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="7kt-Gz-lML" firstAttribute="top" secondItem="BqB-jr-idD" secondAttribute="top" constant="8" id="76T-eF-mgX"/>
+                                        <constraint firstItem="7kt-Gz-lML" firstAttribute="leading" secondItem="BqB-jr-idD" secondAttribute="leading" constant="8" id="Ici-8X-FsS"/>
+                                        <constraint firstItem="Zmi-Ui-bR8" firstAttribute="centerX" secondItem="BqB-jr-idD" secondAttribute="centerX" id="Kn2-O8-aop"/>
+                                        <constraint firstItem="7kt-Gz-lML" firstAttribute="centerX" secondItem="BqB-jr-idD" secondAttribute="centerX" id="TBJ-o2-o2M"/>
+                                        <constraint firstItem="7kt-Gz-lML" firstAttribute="top" secondItem="Zmi-Ui-bR8" secondAttribute="bottom" constant="8" id="akw-QM-tdY"/>
+                                        <constraint firstAttribute="bottom" secondItem="7kt-Gz-lML" secondAttribute="bottom" constant="8" id="eSe-iX-3as"/>
+                                        <constraint firstItem="Zmi-Ui-bR8" firstAttribute="top" secondItem="BqB-jr-idD" secondAttribute="top" constant="8" id="kCH-LI-PvY"/>
+                                        <constraint firstAttribute="trailing" secondItem="7kt-Gz-lML" secondAttribute="trailing" constant="8" id="qpH-D5-gJC"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="76T-eF-mgX"/>
+                                            <exclude reference="TBJ-o2-o2M"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="iconImageView" destination="Zmi-Ui-bR8" id="xPp-Di-sif"/>
+                                    <outlet property="textView" destination="7kt-Gz-lML" id="FHo-AE-HIm"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="delegate" destination="6mf-od-CQX" id="CKY-eP-RMa"/>
+                        </connections>
+                    </tableView>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xht-FK-JK1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="174" y="464"/>
+        </scene>
+    </scenes>
+</document>
